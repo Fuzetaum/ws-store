@@ -1,29 +1,21 @@
 {
   "name": "@ricardofuzeto/ws-store",
-  "description": "Web service core library",
-  "version": "0.0.1-1",
+  "description": "Web service store library",
+  "version": "0.0.1-2",
   "author": "Ricardo Fuzeto",
   "contributors": [
     "Ricardo Fuzeto <ricardofuzeto@gmail.com>"
   ],
   "license": "MIT",
-  "keywords": [
-    "web",
-    "service",
-    "express"
-  ],
+  "keywords": ["web", "service", "store", "data distribution", "flux"],
   "main": "index.js",
   "dependencies": {
     "@ricardofuzeto/ws-core": "0.0.1-4"
   },
   "scripts": {
-    "start": "nodemon test/main.js"
-  },
-  "devDependencies": {
-    "moment": "2.24.0",
-    "nodemon": "1.19.1"
+    "test": "node test/main.js"
   },
   "peerDependencies": {
-    "moment": "2.x"
+    "moment": "2.24.0"
   }
 }

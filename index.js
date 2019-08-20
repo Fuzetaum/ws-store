@@ -1,10 +1,14 @@
 let data = {};
 
 const subscribe = (...customDataset) => {
-  return customDataset.reduce((dataSet, dataKey) => ({
-    ...dataSet,
-    get [dataKey]() { return data[dataKey]; }
-  }), {});
+  let dataSet = {};
+  customDataset.forEach(dataKey =>
+    Object.defineProperty(dataSet, dataKey, {
+      enumerable: true,
+      get: function() { return data[dataKey]; },
+    })
+  );
+  return dataSet;
 };
 
 const notify = (newData) => {
