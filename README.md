@@ -1,3 +1,11 @@
+# Warning note
+
+This library is still under development. We do **not** recommend using it yet since its features and/or interfaces might change in a nightly basis.
+
+Also, it has not been tested properly yet. Test cases are still being designed as the library evolves, so its stability can't be guaranteed for now.
+
+If you still want to use it, consider checking this library's behavior when debugging your project.
+
 # About
 
 Implementation of the Facebook's Flux architecture for Node.js environments.
