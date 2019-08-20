@@ -67,6 +67,15 @@ console.log(data.field1); // field1 value
 console.log(data.field2); // field1 copy value
 ```
 
+# Planned features
+
+We have some suggested features for this library. However, each one must be analyzed in order for the library to remain light and usable across many environments as possible.
+
+Our current list of suggestions:
+
+* Store sanitizing inspired on Garbage Collector (GC) mechanisms;
+* Store sanitizing inspired in Time-to-live (TTL) concept;
+
 # Contributors
 
 Ricardo Fuzeto ([email](mailto:ricardofuzeto@gmail.com?subject=About%20ws-boot)): idea conception and initial development stages
